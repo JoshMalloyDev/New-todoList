@@ -1,0 +1,197 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-size:22px;
+    text-align: center;
+    padding:2%;
+    font-family: 'Koulen', cursive;
+    background-color: #944500;
+background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+}
+
+h1{
+    font-size:65px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.container{
+    width: 40%;
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+    padding:2%;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    margin-top:10%;
+}
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+}
+#newtask input{
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Koulen', cursive;
+
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #0d75ec;
+}
+#newtask button{
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #0d75ec;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Koulen', cursive;
+}
+#tasks{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+/*.task span{
+   font-family: 'Koulen', cursive;
+    font-size: 15px;
+    font-weight: 400;
+}*/
+.task button{
+    background-color: #0a2ea4;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.strikeThrough{
+    text-decoration: line-through;
+    color: black;
+}
+
+.clearAll, .clearCompleted{
+    padding: 10px 30px;
+    background-color: #03305c;
+    color: white;
+    border: none;
+}
+.clearAll:hover{
+    background-color: gold;
+    font-style: italic;
+    color:black;
+}
+
+p{
+    padding:20px;
+}
+
+.count{
+    color: purple;
+    font-weight:900;
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li{
+    background:rgb(219, 205, 167);
+    width:20%;
+    font-style: italic;
+    height:200px;
+    overflow: scroll;
+    border-radius: 10px;
+    font-weight:900;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+}
+
+li:hover{
+    border:2px solid black;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.deleteOne, .star{
+    font-size: 25px;
+    border:none;
+    background-color: transparent;
+}
+
+form{
+    margin-bottom: 3rem;
+}
+
+#cleared{
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#cleared button{
+    margin:5px;
+    padding:10px;
+    font-family: 'Koulen';
+    -webkit-box-shadow: 17px 10px 0px 3px rgba(0,0,0,0.65);
+    box-shadow: 17px 10px 0px 3px rgba(0,0,0,0.65);
+}
+button{
+    font-family: 'koulen';
+    padding:10px;
+   
+}
+
+input{
+    padding:13px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todoList.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/dceedc8de0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="container">
+        <header>
+            <h1>Daily To-Do List</h1>
+            <p>Manage your tasks with this easy to-do list.</p>
+        </header>
+        <section id="enter">
+            <form action="/upload" method="POST">
+                <input id="task" type="text" placeholder="Enter your task here" name="task">
+                <button type="submit" id="addList">Add to List</button>
+            </form> 
+           
+        </section>
+        <section id="itemHere">
+        
+            <ul>
+                <%for(let i=0; i<messages.length; i++){%>
+                    <li>
+                        <span><%=messages[i].task%></span>
+ 
+                        <button class="star">
+                            <i class="fas fa-exclamation-circle"></i>
+                            </button>
+                        <button class="deleteOne">
+                            <i class="fas fa-eraser"></i>
+                        </button>
+                       
+  
+                        
+                    </li>
+                <% } %> 
+
+                
+
+            </ul>
+            
+        </section>
+        <section id="remain">
+            <p>You have <span id="amount"><%= messages.length  %> </span> tasks left</p>
+        </section>
+        <section id="cleared">
+            <button id="endAll">Clear List</button>
+            
+        </section>
+    </section>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
